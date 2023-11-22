@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=, initial-scale=1.0">
+		<title>Calculator</title>
+	<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="calculator" class="container">
+
+			<div id="equation-history">
+				<p>1 + 1</p>
+			</div>
+			<div class="input-display">
+			<input type="text" readonly >
+</div>
+			<!-- Clear, Parenthesis, Multiply -->
+			<div class="calcButtons">
+
+				<!-- Section 1 -->
+				<div class="section section-1">
+					<div class="row">
+						<button class="btn clear">C</button>
+						<button class="btn special">(</button>
+						<button class="btn special">)</button>
+						<button class="btn operator">×</button>
+					</div>
+
+					<!-- Square Root, Percentage, Positive/Negative, Divide -->
+					<div class="row">
+						<button class="btn special">√</button>
+						<button class="btn special">%</button>
+						<button class="btn special">±</button>
+						<button class="btn operator">÷</button>
+					</div>
+				</div>
+
+				<!-- Section 2 -->
+				<div class="section section-2">
+					<!-- 7, 8, 9, Subtact -->
+					<div class="row row-3">
+						<button class="btn number">7</button>
+						<button class="btn number">8</button>
+						<button class="btn number">9</button>
+						<button class="btn operator">-</button>
+					</div>
+
+					<!-- 4, 5, 6, + -->
+					<div class="row row-4">
+						<button class="btn number">4</button>
+						<button class="btn number">5</button>
+						<button class="btn number">6</button>
+						<button class="btn operator">+</button>
+					</div>
+				</div>
+
+				<!-- Double Bottom Row-->
+				<div class="section section-3">
+
+					<div class="section">
+						<!-- 1, 2, 3 -->
+						<div class="row">
+							<button class="btn number">1</button>
+							<button class="btn number">2</button>
+							<button class="btn number">3</button>
+						</div>
+
+						<!-- ., 0, Erase from Left -->
+						<div class="row">
+							<button class="btn decimal">.</button>
+							<button class="btn number">0</button>
+							<button class="btn">&#9003;</button>
+						</div>
+					</div>
+
+					<!-- Equal Button - Big -->
+					<div class="section">	
+						<button id="equalButton" class="btn big-btn">=</button>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+	<script src="script.js"></script>
+</html>
